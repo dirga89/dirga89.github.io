@@ -1,0 +1,144 @@
+{
+  "main": {
+    "name": "Dirga Putra Cahaya",
+    "occupation": "Full Stack Developer",
+    "description": "",
+    "image": "profilepic.jpg",
+    "bio": "My cooperative, friendly and helpful attitude makes me a trusted team member. At the same time, thanks to my independent nature, I also enjoy focusing on my work alone. Because of my curious and broad-minded approach, I am always open to new ideas and experimentation.",
+    "contactmessage": "",
+    "email": "dirga89@gmail.com",
+    "phone": "+6281-665-0210",
+    "address": {
+      "street": "Jend. Sudirman 196",
+      "city": "Salatiga",
+      "state": "Indonesia",
+      "zip": "50743"
+    },
+    "website": "http://dirga89.github.io/resume",
+    "resumedownload": "https://github.com/dirga89/resume/raw/main/public/assets/Dirga_Putra_CV.pdf",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "http://facebook.com/dirgasoelak",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "twitter",
+        "url": "http://twitter.com/dirga89",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/dirga89/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "http://instagram.com/dirgasoelak",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/dirga89",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "",
+    "education": [
+      {
+        "school": "Atma Jaya Yogyakarta University",
+        "degree": "Bachelor of Technology Information",
+        "graduated": "March 2012",
+        "description": ""
+      }
+    ],
+    "work": [
+      {
+        "company": "Putra Abadi Sport Center",
+        "title": "Software Developer ",
+        "years": "March 2020 - October 2022",
+        "description": "Develop a software to handle the transaction that happen in daily basis and produce a detailed report of the transaction."
+      },
+      {
+        "company": "Sanctuary Cyber Cafe",
+        "title": "Business Owner",
+        "years": "April 2015 - February 2020",
+        "description": "Set up a cyber cafe that focused on customers comfort. Provide a high quality PC and food to fulfill high-end customers demand on playing online games using high spec PC gaming at a cozy place with outstanding beverages."
+      },
+      {
+        "company": "Gezellic Cafe Salatiga",
+        "title": "Software Developer ",
+        "years": "December 2012 - March 2015",
+        "description": "Update old code bases to modern development standars using Microsoft .NET C# Framework, also improving some functionalities."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Git",
+        "level": "75%"
+      },
+      {
+        "name": "Javascript",
+        "level": "85%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "80%"
+      },
+      {
+        "name": "CSS",
+        "level": "60%"
+      },
+      {
+        "name": "HTML5",
+        "level": "80%"
+      },
+      {
+        "name": "Node.js",
+        "level": "80%"
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "75%"
+      },
+      {
+        "name": "C#",
+        "level": "85%"
+      },
+      {
+        "name": "Microsoft SQL Server",
+        "level": "75%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Face Recognition",
+        "category": "Small project to recognize faces from a picture. Still on progress, 80% done.",
+        "image": "facerecognition.jpg",
+        "url": "https://dirga89.github.io/facerecognition"
+      },
+      {
+        "title": "robofriends",
+        "category": "Fun project to generate a robot based on name.",
+        "image": "robofriends.jpg",
+        "url": "https://dirga89.github.io/robofriends"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+        "user": "Kareem Abdul Jabbar"
+      },
+      {
+        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Steve Wozniak... impersonator"
+      }
+    ]
+  }
+}
