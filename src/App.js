@@ -10,6 +10,22 @@ import Contact from './Components/Contact';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 
+function getJSONP(url, success) {
+
+  var ud = '_' + +new Date,
+      script = document.createElement('script'),
+      head = document.getElementsByTagName('head')[0] 
+             || document.documentElement;
+
+  window[ud] = function(data) {
+      head.removeChild(script);
+      success && success(data);
+  };
+
+  script.src = url.replace('callback=?', 'callback=' + ud);
+  head.appendChild(script);
+
+}
 class App extends Component {
 
   constructor(props){
@@ -24,9 +40,14 @@ class App extends Component {
 
   }
 
+  // getJSONP('http://soundcloud.com/oembed?url=http%3A//soundcloud.com/forss/flickermood&format=js&callback=?', function(data){
+  //   console.log(data);
+  // }); 
+ 
   getResumeData(){
     $.ajax({
       url:'https://floating-reef-08480.herokuapp.com/',
+      // url:'http://localhost:4000/',
       dataType:'json',
       cache: false,
       success: function(data){
@@ -38,6 +59,19 @@ class App extends Component {
       }
     });
   }
+
+  // getResumeData(){
+  //   fetch('http://localhost:4000/')
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //     this.setState({resumeData: data});
+  //     console.log(data);
+  //   })
+  //   .catch((err) => {
+  //     console.log(err);
+  //   })
+  //   console.log("woyy");
+  // }
 
   componentDidMount(){
     this.getResumeData();
