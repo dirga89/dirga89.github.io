@@ -26,7 +26,7 @@ class App extends Component {
 
   getResumeData(){
     $.ajax({
-      url:'/resumeData.json',
+      url:'https://floating-reef-08480.herokuapp.com/',
       dataType:'json',
       cache: false,
       success: function(data){
