@@ -40,5 +40,9 @@ export default defineConfig({
 			}
 		}
 	},
-	prefetch: true
+	prefetch: true,
+	// output: 'server',
+	// adapter: vercel({
+	// 	webAnalytics: { enabled: true }
+	// })
 })
