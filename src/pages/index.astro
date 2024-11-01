@@ -9,13 +9,16 @@ import PostPreview from '@/components/blog/PostPreview.astro'
 
 import { Image } from 'astro:assets'
 import astro from '../assets/about-astro.png'
+import self from '../assets/self-512.jpg'
 
 import { getAllPosts, sortMDByDate } from '@/utils'
 
-const languages = ['lorem', 'ipsum']
-const frontend = ['lorem', 'ipsum', 'lorem', 'ipsum', 'lorem', 'ipsum', 'lorem']
-const backend = ['lorem', 'ipsum', 'lorem', 'ipsum']
-const others = ['lorem', 'ipsum', 'lorem', 'ipsum', 'lorem']
+const languages = ['.Net', 'C#', 'Java', 'javascript', 'php']
+const frontend = ['HTML', 'CSS', 'React.js', 'React Native', 'Astro.js']
+const backend = ['Express.js']
+const fullstack = ['Next.js', 'Laravel', 'Blazor']
+const database = ['Microsoft SQL Server', 'MySql', 'PostgreSql']
+const others = ['AWS', 'GCP']
 
 const MAX_POSTS = 10
 const allPosts = await getAllPosts()
@@ -26,14 +29,14 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 	<div class='flex w-full flex-col gap-y-10'>
 		<section class='flex flex-col items-center gap-y-7'>
 			<Image
-				src={astro}
+				src={self}
 				alt='profile photo'
-				class='h-28 w-auto rounded-full bg-[#FFBE98] p-2'
+				class='h-48 w-auto rounded-full bg-[#3b3636] p-1'
 				loading='eager'
 			/>
 
 			<div class='flex flex-col items-center gap-y-4'>
-				<h1 class='text-3xl font-bold'>Full Stack Developer</h1>
+				<h1 class='text-3xl font-bold'>Dirga Putra Cahaya</h1>
 				<a
 					href='https://github.com/dirga89'
 					class='flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md'
@@ -48,7 +51,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 					<p class='font-medium'>Github Page</p>
 				</a>
 				<div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-					<Label title='Lorem Ipsum'>
+					<Label title='Full Stack Developer'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
 							><path
 								fill='currentColor'
@@ -56,7 +59,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 							></path></svg
 						>
 					</Label>
-					<Label title='Ipsum'>
+					<Label title='Salatiga, Indonesia'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
 							><path
 								fill='currentColor'
@@ -67,7 +70,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 					<Label
 						title='Connect on Linkedin'
 						as='a'
-						href='https://www.linkedin.com/in/example/'
+						href='https://www.linkedin.com/in/dirga89/'
 						target='_blank'
 					>
 						<svg
@@ -87,10 +90,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 		<Section title='About'>
 			<p class='text-muted-foreground'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque quia omnis
-				consectetur, voluptas praesentium veniam blanditiis ratione asperiores accusantium laborum
-				odit commodi quis deserunt incidunt et dolor iure ut! Lorem ipsum dolor sit, amet
-				consectetur adipisicing elit. Alias quia, doloribus ut beatae perspiciatis voluptatibus.
+				Complex problem-solver with analytical and driven mindset.
+				Dedicated to achieving demanding development objetives according to tight schedules while producing impeccable code.
 			</p>
 		</Section>
 		<!-- {
@@ -109,61 +110,139 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 		<Section title='Experience'>
 			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
-				altText='Lorem, ipsum dolor sit'
+				heading='Full Stack Developer'
+				subheading='Lunch Actually Pte Ltd • Remote'
+				date='Jul 2023 - Current'
+				imagePath='/src/assets/lunchactually.png'
+				altText='Full Stack Developer Lunch Actually Pte Ltd'
 				imageClass='h-12 w-auto md:-left-16'
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
 					<li>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-						molestiae laboriosam pariatur!
-
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
+						Enhanced user experience by developing and implementing a responsive front-end interface for web applications
+					</li>
+					<li>
+						Collaborated with cross-functional teams to design, develop, and launch new features for web applications
+					</li>
+					<li>
+						Assessed feasibility of proposed feature requests by conducting thorough technical analyses prior to implementation
+					</li>
+					<li>
+						Consulted with engineering team members to determine system loads and develop improvement plans
+					</li>
+					<li>
+						Maintained and optimized mobile application performance, implementing regular updates to enhance functionality, address bugs, and improve user engagement across iOS and Android platforms
 					</li>
 				</ul>
 			</Card>
 			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
-				altText='Lorem, ipsum dolor sit'
+				heading='Senior Software Developer'
+				subheading='Wistkey Ltd • Remote'
+				date='Jan 2023 - Jun 2023'
+				imagePath='/src/assets/wistkey.png'
+				altText='Senior Software Developer Wistkey Ltd'
 				imageClass='h-12 w-auto md:-left-16'
-			/>
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>
+						Monitored ongoing operation of assigned programs and responded to problems by diagnosing and correcting logic and coding errors
+					</li>
+					<li>
+						Collaborated with project managers to select ambitious, but realistic coding milestones on pre-release software project development
+					</li>
+					<li>
+						Developed databases, programs, and processes for integration and implementation across enterprise
+					</li>
+					<li>
+						Consulted with engineering team members to determine system loads and develop improvement plans
+					</li>
+				</ul>
+			</Card>
+			<Card
+				heading='Full Stack Developer'
+				subheading='Putra Abadi Sport Center • Salatiga, Indonesia'
+				date='Apr 2020 - Oct 2022'
+				imagePath='/src/assets/putraabadi.png'
+				altText='Full Stack Developer Putra Abadi Sport Center'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>
+						Managed front-end and back-end development in the company's Employee Track and Account Management systems
+					</li>
+					<li>
+						Remained knowledgeable in new standards, technologies, and trends in website development
+					</li>
+					<li>
+						Helped to achieve a consistent look and visual theme across the website by promoting uniform fonts, formatting, images, and layout
+					</li>
+				</ul>
+			</Card>
+			<Card
+				heading='Business Owner'
+				subheading='Sanctuary Cyber Cafe • Salatiga, Indonesia'
+				date='Apr 2015 - Feb 2020'
+				imagePath='/src/assets/sanctuary.png'
+				altText='Business Owner Sanctuary Cyber Cafe'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>
+						Put together realistic budgets based upon costs and fees for successfully operating business
+					</li>
+					<li>
+						Consulted with costumers to assess needs and propose optimal solutions
+					</li>
+					<li>
+						Studied market to determine optimal pricing of goods and capittalize on emerging opportunities
+					</li>
+					<li>
+						Trained and motivated employees to perform daily business functions
+					</li>
+				</ul>
+			</Card>
+			<Card
+				heading='Software Developer'
+				subheading='Gezellic Cafe • Salatiga, Indonesia'
+				date='Dec 2012 - Mar 2015'
+				imagePath='/src/assets/gezellic.png'
+				altText='Software Developer Gezellic Cafe'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>
+						Updated old code bases to modern development standards, improving functionality
+					</li>
+					<li>
+						Reviewed project specifications and designed technology solutions that met or exceeded performance expectations
+					</li>
+					<li>
+						Participated in architecture, design, and implementation of back-end features using C#
+					</li>
+				</ul>
+			</Card>
 		</Section>
 
 		<Section title='Education'>
 			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
+				heading=`Bachelor's Degree: Information Technology`
+				subheading='Atma Jaya Yogyakarta University • Yogyakarta, Indonesia'
+				imagePath='/src/assets/uajy.png'
 				altText='Lorem, ipsum dolor sit'
 				imageClass='h-12 w-auto md:-left-16'
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
 					<li>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-						molestiae laboriosam pariatur!
-
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
+						Graduated in Information Technology from Atma Jaya Yogyakarta University, with a focus on software development, data management, and system architecture
+					</li>
+					<li>
+						Developed strong skills in full stack development, problem-solving, and application optimization
 					</li>
 				</ul>
 			</Card>
-			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
-				altText='Lorem, ipsum dolor sit'
-				imageClass='h-12 w-auto md:-left-16'
-			/>
 		</Section>
 
-		<Section title='Projects'>
+		<!-- <Section title='Projects'>
 			<div class='flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0'>
 				<ProjectCard
 					href='https://www.google.com'
@@ -182,9 +261,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 					class='w-full sm:w-1/2'
 				/>
 			</div>
-		</Section>
+		</Section> -->
 
-		<Section title='Certifications'>
+		<!-- <Section title='Certifications'>
 			<Card
 				as='a'
 				heading='Lorem ipsum, dolor sit amet consectetur adipisicing.'
@@ -205,12 +284,14 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				imageClass='h-11 w-auto md:-left-16'
 				href='https://www.google.com'
 			/>
-		</Section>
+		</Section> -->
 
 		<Section title='Skills'>
 			<SkillLayout title='Languages' skills={languages} />
 			<SkillLayout title='Frontend' skills={frontend} />
 			<SkillLayout title='Backend' skills={backend} />
+			<SkillLayout title='Full Stack' skills={fullstack} />
+			<SkillLayout title='Database' skills={database} />
 			<SkillLayout title='Others' skills={others} />
 		</Section>
 	</div>
